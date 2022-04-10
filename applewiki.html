@@ -4,35 +4,77 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width",initial-scale=1.0">
    <title>wikipdia apple</title>
+   <link rel="stylesheet" href="stylesheet.css "> 
    <style>
        #tableofcontent{
            border:2px solid black;
-           margin: 5px 0;
-           width: 15%;
-       }
-       #photo{
-           float: left ;
-           margin: 20px;
-           height: 250px;
+           display: inline;
+           
        }
    </style>
  </head>
  
    <body>
-     <header>
-       <h2>תפוח</h2><hr>
-       <p>תַּפּוּחַ תַּרְבּוּתִי (מכונה גם תפוח-עץ או בקיצור תפוח, שם מדעי: <i>Malus domestica</i>) הוא מין של עץ פרי נשיר במשפחת הוורדיים.</p>
-    <div id="tableofcontent">
+     
+       
+        <div class="flex-container">
+            <div class="flexbox-item1"><img src="data:image/jpeg;base64,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" height="100px"></div>
+            <div class="flexbox-item2"><input type="text" id="seabar" placeholder="חיפוש בוויקיפדיה" ><button>חיפוש</button></div>
+            <div class="flexbox-item3"><b><a href="#headerr" class="theader" style="text-decoration: none;"> יצירת חשבון </a></b></div> 
+            <div class="flexbox-item4"><b><a href="#headerr" class="theader" style="text-decoration: none;" >        ... </a> </b></div>
+        </div>
+   
+    
+       
+
+     <div class="pgcontainer">
+    
+    <div class="floatleft">
+        <p>עמוד ראשי </p>
+          <p> ברוכים הבאים</p>
+          <p> שינויים אחרונים </p> 
+          <p> ערכים מומלצים </p> 
+          <p> דיווח על טעות </p> 
+          <p> פורטלים </p> 
+          <p></p>  ערך אקראי </p> 
+          <p> תרומה לוויקיפדיה</p>
+    </div>
+  
+    
+    <div class="mainsub">
+
+        <table  >
+            <tr class="ftable">
+                <td style="width: 4%;"><a href="">ערך</a></td>
+                <td style="width: 70%;"><a href="">שיחה</a></td>
+                <td style="width: 6%;"><a href="">קריאה</a></td>
+                <td style="width: 6%;"><a href="">עריכה קוד מקור</a></td>
+                <td style="width: 6%;"><a href="">עריכה</a></td>
+                <td style="width: 6%;"><a href="">גרסאות קודמות</a></td>
+            </tr>
+            </table>
+
+
+
+
+    <h2>תפוח</h2>
+       <hr> 
+        <img id="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/250px-Red_Apple.jpg" alt="picture of apple">
+       <p style="display: inline;">תַּפּוּחַ תַּרְבּוּתִי (מכונה גם תפוח-עץ או בקיצור תפוח, שם מדעי: <i>Malus domestica</i>) הוא מין של עץ פרי נשיר במשפחת הוורדיים.</p>   
+       <div id="tableofcontent">
        <ol ><p>תוכן עניינים</p>
           <li><a href="#origin">מקור התפוח התרבותי</a></li>
           <li><a href="#species">זני תפוחים מתורבתים</a></li>
           <li><a href="#nvalue">ערך תזונתי</a></li>
           <li><a href="#grow">גידול תפוחים</a></li>
-       </ol>
+          <li><a href="#grow">התפוח בתרבות</a></li>
+          <li><a href="#grow">התפוח ביהדות</a></li>
+          <span><a href="#grow">6.1 בלילי שבתות</a></span>
+          <li><a href="#grow">שימושים</a></li>
+          <li><a href="#grow">גלריה</a></li>      
+        </ol>
     </div>
-       <img id="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/250px-Red_Apple.jpg" alt="picture of apple">
-</header>
-<main>
+      <!-- <img id="photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/250px-Red_Apple.jpg" alt="picture of apple">-->
   <div id="origin">
     <h2>מקור התפוח התרבותי</h2><hr>
 <p>מקורו של התפוח התרבותי במין הבר Malus sieversii, המגיע ממרכז אסיה וגדל גם כיום בהרים בדרום קזחסטן, בקירגיזסטן, בטג'יקיסטן ובמחוז שינג'יאנג בסין. מינים אחרים שככל הנראה קשורים בהתפתחות התפוח התרבותי הם Malus baccata ו-Malus sylvestris. מיני תפוח נוספים משמשים כיום בניסיונות לפתח זני תפוחים שיהיו מסוגלים לגדול בתנאי אקלים שונים.
@@ -54,10 +96,14 @@
         עונת התפוחים משתנה מזן לזן, וכתלות במזג האוויר במקום הגידול. בחצי כדור הארץ הצפוני עונת התפוחים היא מאמצע יולי ועד תחילת נובמבר (הפריחה היא לרוב כמה חודשים קודם לכן, בתלות בזן). בחצי כדור הארץ הדרומי העונה היא בין תחילת פברואר לסוף מאי. יש זני תפוחים רבים הגדלים הן בחצי כדור הארץ הדרומי והן הצפוני ומשתמרים היטב בקירור והובלה, דבר המאפשר שיווקם בכל העולם בכל עונות השנה.</p>
 </div>
 
-</main>
-
+</div>
+<div class="leftside">
+  
+</div>
+</div>
 
 
 </body>
 </html>
+
 

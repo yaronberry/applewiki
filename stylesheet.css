@@ -1,0 +1,104 @@
+
+#photo{
+    float: left ;
+    clear: left;
+   /* margin: 20px; 
+    height: 250px; */
+    
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+}
+
+
+
+
+
+.flex-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.flexbox-item1 {
+    position: relative;
+   
+    height: 100px;
+    
+  
+
+     
+}
+
+.flexbox-item2{  
+    
+    margin: 50px;
+    background-color:red;
+    flex-basis: 600px;
+    
+}
+
+.flexbox-item3{
+    position: relative;
+    right: 250px;
+    align-self: center;
+    flex-basis: 70px;
+    
+}
+
+.flexbox-item4{
+    position: relative;
+    right: 250px;
+    align-self: center;
+    flex-basis: 350px;
+   
+}
+
+
+
+.pgcontainer{
+    display: flex;
+    justify-content: space-between;
+    height: 1100px;
+}
+.floatleft{
+  
+    flex-basis: 500px;
+}
+
+.mainsub{
+   
+}
+
+.ftable a{
+    
+    text-decoration: none;
+
+}
+
+.ftable a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+
+}
+
+.leftside{
+    background-color: white;
+    flex-basis: 350px;
+}
+
+/*<table>
+<tr>
+    <td>ערך</td>
+    <td style="width: 70%;">שיחה</td>
+    <td>קריאה</td>
+    <td>עריכה קוד מקור</td>
+    <td>עריכה</td>
+    <td>גרסאות קודמות</td>
+</tr>
+</table>
